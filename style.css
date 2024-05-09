@@ -13,8 +13,9 @@ a:link{
     color:green;
 }
 a:visited{
-    color:blue
+    color:blue;
 }
 div#zentai{
-    background-color: yellow;
+    padding: 7px;
+    background-color: rgb(158, 158, 114);
 }
