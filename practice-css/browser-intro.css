@@ -26,13 +26,13 @@ div#zentai {
 	flex-direction: row;
 	width: 1024px;
 	grid-gap: 10px;
-	
+}
 
 div#zentai > div {
 	padding: 5px;
 	background-color: #ffefaf;
 }
-}
+
 img{
 	float:right;
 }
