@@ -12,6 +12,7 @@ h1 {
 	color: white;
 	text-shadow: navy;
 	background-color: #7f7fcf;
+	background: linear-gradient(white, #ffefaf);
 }
 
 h2 {
@@ -19,7 +20,6 @@ h2 {
 	margin: 5px;
 	font-family:cursive;
 	color: #3f3faf;
-	background: linear-gradient(white, #ffefaf);
 }
 
 div#zentai {
