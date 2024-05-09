@@ -7,7 +7,7 @@ h1{
 h2{
     font-family:cursive;
     color:orange;
-    background: linear-gradient(to right,red, white);
+    background: linear-gradient(to right,red, rgb(158, 158, 114));
 }
 a:link{
     color:green;
