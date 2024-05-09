@@ -9,7 +9,7 @@ p.info {
 }
 
 h1 {
-	text-shadow: navy white;
+	text-shadow: navy 1px white 10px;
 	background-color: #7f7fcf;
 }
 
@@ -28,13 +28,14 @@ div#zentai {
 	grid-gap: 10px;
 	flex-direction: row;
 	width: 1024px;
-	background-color: #ffefaf;
-}
+	padding: 5px;
 
 div#zentai > div {
-	padding: 5px;
+	background: cyan;
+	background-color: #ffefaf;
+}
 	
 }
 img.icon{
-	float:down;
+	float:right;
 }
