@@ -1,16 +1,16 @@
 h1{
     color:aqua
 }
-.box p :first-child{
-    background-color: purple;
-}
 h2{
     font-family:cursive;
     color:orange;
     background: linear-gradient(to right,red, rgb(158, 158, 114));
 }
+h3{
+    color:rgb(153, 244, 153);
+}
 a:link{
-    color:green;
+    color:rgb(212, 104, 180);
 }
 a:visited{
     color:blue;
