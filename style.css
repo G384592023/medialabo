@@ -1,10 +1,18 @@
 h1,h2{
-    color:blue;
-    background-color: purple;
+    color:orange;
+    background-color: red;
 }
 a:link{
     color:green;
 }
 a:visited{
     color:blue
+}
+div#zentai{
+    display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-auto-rows: 200px 200px;
+	flex-direction: row;
+	width: 1024px;
+	grid-gap: 10px;
 }
