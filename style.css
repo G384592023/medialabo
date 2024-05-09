@@ -1,6 +1,13 @@
-h1,h2{
+h1{
+    color:aqua
+}
+.box p :first-child{
+    background-color: purple;
+}
+h2{
+    font-family:cursive;
     color:orange;
-    background-color: red;
+    background: linear-gradient(to right,red, white);
 }
 a:link{
     color:green;
@@ -9,10 +16,5 @@ a:visited{
     color:blue
 }
 div#zentai{
-    display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-auto-rows: 200px 200px;
-	flex-direction: row;
-	width: 1024px;
-	grid-gap: 10px;
+    background-color: yellow;
 }
