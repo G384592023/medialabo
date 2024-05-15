@@ -4,7 +4,6 @@ h1{
 h2{
     font-family:cursive;
     color:orange;
-    background: linear-gradient(to right,red, rgb(158, 158, 114));
 }
 h3{
     color:rgb(153, 244, 153);
@@ -13,9 +12,9 @@ a:link{
     color:rgb(212, 104, 180);
 }
 a:visited{
-    color:blue;
+    color:rgb(205, 58, 58);
 }
 div#zentai{
     padding: 7px;
-    background-color: rgb(158, 158, 114);
+    background-color: rgb(70, 79, 181);
 }
