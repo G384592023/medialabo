@@ -12,7 +12,6 @@ hantei();
 hantei();
 hantei();
 hantei();
-
 // ボタンを押した後の処理をする関数 hantei() の定義
 function hantei() {
   // 将来ここでは 4 ではなくテキストボックスに指定された数値を yoso に代入する
@@ -21,18 +20,21 @@ function hantei() {
   // 課題3-1: 正解判定する
   // kotae と yoso が一致するかどうか調べて結果を出力
   // 課題3-1における出力先はコンソール
-    kaisu = kaisu+1;
-  console.log(kaisu + "回目の予想:" + yoso);
+  kaisu = kaisu+1;
+  let dp = document.querySelector('span#kaisu')
+  dp.textContent=(kaisu);
+  let dn = document.querySelector('span#answer')
+  dn.textContent=(yoso);
+  let df = document.querySelector('p#result')
   if(3<kaisu){
-    console.log("答えは" + kotae + "でした．すでにゲームは終わっています");
+    df.textContent=("答えは" + kotae + "でした．すでにゲームは終わっています");
   } else if (kaisu===3 && yoso!==kotae){
-    console.log("まちがい．残念でした答えは" + kotae + "です");
+    df.textContent=("まちがい．残念でした答えは" + kotae + "です");
   } else if(yoso===kotae){
-    console.log("正解です．おめでとう!");
+    df.textContent=("正解です．おめでとう!");
   } else if (kotae<yoso){
-    console.log("まちがい．答えはもっと小さいですよ");
+    df.textContent=("まちがい．答えはもっと小さいですよ");
   } else {
-    console.log("まちがい．答えはもっと大きいですよ");
+    df.textContent=("まちがい．答えはもっと大きいですよ");
   }
-
 }
