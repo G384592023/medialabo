@@ -17,12 +17,34 @@ let data = [
 let p2 = document.querySelector('h2#ex42');
 let p3 = document.createElement('p');
 p3.textContent='写真表と都市の緯度経度のページです';
+p2.insertAdjacentElement('afterend',p3);
+p3.style.textEmphasis='sesame green';
 
 // 練習4-3 写真表作成プログラム
-
-
+let students = [
+    {face:"taro.png"},
+    {face:"jiro.png"},
+    {face:"hanako.png"}
+]
+for (let student of students) {
+let dp = document.querySelector('div#phototable')
+let img = document.createElement('img');
+img.setAttribute('src',student.face);
+let p = document.createElement('p');
+p.insertAdjacentElement('beforeend', img);
+dp.insertAdjacentElement('beforeend', p);
+}
 // 練習4-4 箇条書き削除プログラム
-
-
+let w = document.querySelectorAll('li')
+for(let n of w){
+	n.remove();
+}
 // 練習4-5 箇条書き追加プログラム
+for(let n of data){
+	let dp = document.querySelector('ul#location')
+	let li = document.createElement('li');
+	li.textContent=(n.name + "... 緯度:" + n.lat + ",経度:" + n.lng);
+	dp.insertAdjacentElement('afterend',li);
+}
+
 
