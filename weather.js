@@ -46,11 +46,59 @@ let data = {
 };
 
 ////////// 課題3-2 ここからプログラムを書こう
+let dp = document.querySelector('div#result')
 
-console.log(data.name);
-console.log(data.weather[0].description);
-console.log(data.main.temp_max);
-console.log(data.main.temp_min);
-console.log(data.main.humidity); 
-console.log(data.wind.speed);
-console.log(data.wind.deg);
+let p = document.createElement('li');
+p.textContent = '世界の天気(検索結果2件)';
+let u = document.createElement('ul');
+u.insertAdjacentElement('beforeend', p);
+dp.insertAdjacentElement('beforeend', u);
+
+let p1 = document.createElement('li');
+p1.textContent = '検索結果1件目';
+let u1 = document.createElement('ul');
+u.insertAdjacentElement('beforeend', u1);
+u1.insertAdjacentElement('beforeend', p1);
+
+let p2 = document.createElement('li');
+p2.textContent = ('都市名:' + data.name);
+let u2 = document.createElement('ul');
+u.insertAdjacentElement('beforeend', u1);
+u1.insertAdjacentElement('beforeend', u2);
+u2.insertAdjacentElement('beforeend', p2); 
+
+let p3 = document.createElement('li');
+p3.textContent = ('天気:' + data.weather[0].description);
+u.insertAdjacentElement('beforeend', u1);
+u1.insertAdjacentElement('beforeend', u2);
+u2.insertAdjacentElement('beforeend', p3); 
+
+let p4 = document.createElement('li');
+p4.textContent = ('最高気温:' + data.main.temp_max);
+u.insertAdjacentElement('beforeend', u1);
+u1.insertAdjacentElement('beforeend', u2);
+u2.insertAdjacentElement('beforeend', p4);
+
+let p5 = document.createElement('li');
+p5.textContent = ('最低気温:' + data.main.temp_min);
+u.insertAdjacentElement('beforeend', u1);
+u1.insertAdjacentElement('beforeend', u2);
+u2.insertAdjacentElement('beforeend', p5);
+
+let p6 = document.createElement('li');
+p6.textContent = ('湿度:' + data.main.humidity);
+u.insertAdjacentElement('beforeend', u1);
+u1.insertAdjacentElement('beforeend', u2);
+u2.insertAdjacentElement('beforeend', p6);
+
+let p7 = document.createElement('li');
+p7.textContent = ('風速:' + data.wind.speed);
+u.insertAdjacentElement('beforeend', u1);
+u1.insertAdjacentElement('beforeend', u2);
+u2.insertAdjacentElement('beforeend', p7);
+
+let p8 = document.createElement('li');
+p8.textContent = ('風向:' + data.wind.deg);
+u.insertAdjacentElement('beforeend', u1);
+u1.insertAdjacentElement('beforeend', u2);
+u2.insertAdjacentElement('beforeend', p8);
