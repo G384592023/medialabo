@@ -60,6 +60,7 @@ let u1 = document.createElement('ul');
 u.insertAdjacentElement('beforeend', u1);
 u1.insertAdjacentElement('beforeend', p1);
 
+
 let p2 = document.createElement('li');
 p2.textContent = ('都市名:' + data.name);
 let u2 = document.createElement('ul');
