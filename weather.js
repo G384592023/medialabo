@@ -46,6 +46,28 @@ let data = {
 };
 
 ////////// 課題3-2 ここからプログラムを書こう
+let b1 = document.querySelector('button#btn');
+b1.addEventListener('click', showSelectResult);
+
+function showSelectResult() {
+    let s = document.querySelector('select#toshi');
+    let idx = s.selectedIndex;  // idx 番目の option が選択された
+
+    let os = s.querySelectorAll('option');  // s の子要素 option をすべて検索
+    let o = os.item(idx);       // os の idx 番目の要素
+
+    console.log('選択された ' + idx + ' 番目の option の情報:');
+    console.log('  value=' + o.getAttribute('value'));  // id 属性を表示
+    console.log('  textContent='+o.textContent);
+}
+
+let cs = document.querySelectorAll('input[name="tenki"]');
+	for (let c of cs) {
+		if (c.checked) {
+			console.log(data.name);
+		}
+	}
+
 let dp = document.querySelector('div#result')
 
 let p = document.createElement('li');
