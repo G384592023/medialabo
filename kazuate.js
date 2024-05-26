@@ -25,18 +25,33 @@ function hantei() {
   let dn = document.querySelector('span#answer')
   dn.textContent=(yoso);
   let df = document.querySelector('p#result')
-  if(0<n){
+  if(3<kaisu){
+    df.textContent=("答えは" + kotae + "でした．すでにゲームは終わっています");
+    n = n+4;
+  } else if(0<n){
+    df.textContent=("答えは" + kotae + "でした．すでにゲームは終わっています");
+  } else if(kotae===yoso){
+    df.textContent=("正解です．おめでとう!");
+  } else if (kaisu===3){
+    df.textContent=("まちがい．残念でした答えは" + kotae + "です");
+  }else if(kotae>yoso){
+    df.textContent=("まちがい．答えはもっと大きいですよ");
+  } else if (kotae<yoso){
+    df.textContent=("まちがい．答えはもっと小さいですよ");
+  }
+
+  /**if(0<n){
     df.textContent=("答えは" + kotae + "でした．すでにゲームは終わっています");
   } else if(3<kaisu){
     df.textContent=("答えは" + kotae + "でした．すでにゲームは終わっています");
   } else if (kotae===yoso){
     df.textContent=("正解です．おめでとう!");
-    n = n+1;
+    n = n+4;
   } else if(kotae>yoso){
     df.textContent=("まちがい．答えはもっと大きいですよ");
   } else if (kotae<yoso){
     df.textContent=("まちがい．答えはもっと小さいですよ");
   } else {
     df.textContent=("まちがい．残念でした答えは" + kotae + "です");
-  }
+  } **/
 }
