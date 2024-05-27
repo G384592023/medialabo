@@ -27,11 +27,11 @@ function hantei() {
   let df = document.querySelector('p#result')
   if(3<kaisu){
     df.textContent=("答えは" + kotae + "でした．すでにゲームは終わっています");
-    n = n+4;
   } else if(0<n){
     df.textContent=("答えは" + kotae + "でした．すでにゲームは終わっています");
   } else if(kotae===yoso){
     df.textContent=("正解です．おめでとう!");
+    n = n+4;
   } else if (kaisu===3){
     df.textContent=("まちがい．残念でした答えは" + kotae + "です");
   }else if(kotae>yoso){
