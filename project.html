@@ -7,16 +7,18 @@
         <script src="weather.js" defer></script>
     </head>
     <body>
-        <select name="toshi" id="toshi">
-            <option value="">都市名を選択してください</option>
-            <option value="kairo">カイロ</option>
-            <option value="mosukuwa">モスクワ</option>
-            <option value="yohanesu">ヨハネスブルク</option>
-            <option value="pekin">北京</option>
-        </select>
         <div>
-            <input type="checkbox" name="tenki" id="tenkou" value="tenkou">
-            <label for="tenkou">天気</label>
+            <select name="toshi" id="toshi">
+                <option value="">都市名を選択してください</option>
+                <option value="360630">カイロ</option>
+                <option value="524901">モスクワ</option>
+                <option value="993800">ヨハネスブルク</option>
+                <option value="1816670">北京</option>
+            </select>
+        </div>
+        <div>
+            <input type="checkbox" name="tenki" id="tenkou" value="weather[0].description">
+            <label for="weather[0].description">天気</label>
         </div>
         <div>
             <input type="checkbox" name="tenki" id="saiko" value="saiko">
