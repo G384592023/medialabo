@@ -4,29 +4,51 @@
         <meta charset="utf-8">
         <title>世界の天気</title>
         <link rel="stylesheet" href="project.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
         <script src="weather.js" defer></script>
     </head>
     <body>
+        <div id="first"></div>
         <div>
-            <select name="toshi" id="toshi">
+            <select name="name" id="name">
                 <option value="">都市名を選択してください</option>
                 <option value="360630">カイロ</option>
                 <option value="524901">モスクワ</option>
                 <option value="993800">ヨハネスブルク</option>
                 <option value="1816670">北京</option>
-            </select>
+                <option value="1850147">東京</option>
+                <option value="1880252">シンガポール</option>
+                <option value="2147714">シドニー</option>
+                <option value="2643743">ロンドン</option>
+                <option value="2968815">パリ</option>
+                <option value="3451189">リオデジャネイロ</option>
+                <option value="5128581">ニューヨーク</option>
+                <option value="5368361">ロサンゼルス</option>
+        </select>
         </div>
         <div>
             <input type="checkbox" name="tenki" id="tenkou" value="weather[0].description">
-            <label for="weather[0].description">天気</label>
+            <label for="tenkou">天気</label>
         </div>
         <div>
-            <input type="checkbox" name="tenki" id="saiko" value="saiko">
+            <input type="checkbox" name="tenki" id="saiko" value="main.temp_max">
             <label for="saiko">最高気温</label>
         </div>
         <div>
-            <input type="checkbox" name="tenki" id="saite" value="saite">
+            <input type="checkbox" name="tenki" id="saite" value="main.temp_min">
             <label for="saite">最低気温</label>
+        </div>
+        <div>
+            <input type="checkbox" name="tenki" id="situdo" value="main.humidity">
+            <label for="situdo">湿度</label>
+        </div>
+        <div>
+            <input type="checkbox" name="tenki" id="fuusoku" value="wind.speed">
+            <label for="fuusoku">風速</label>
+        </div>
+        <div>
+            <input type="checkbox" name="tenki" id="fuukou" value="wind.deg">
+            <label for="fuukou">風向</label>
         </div>
         <button id="btn">検索</button>
         <div id="result"></div>
