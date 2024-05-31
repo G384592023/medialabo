@@ -80,13 +80,11 @@ function showSelectResult() {
     .catch(showError)
     .then(finish);
 }
-let na;
 function showResult(resp) {
   let data = resp.data;
   if (typeof data === 'string') {
       data = JSON.parse(data);
   }
-  na=data.name;
   console.log(data.name);
   // data をコンソールに出力
   processData(data);
