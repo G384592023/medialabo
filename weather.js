@@ -48,8 +48,8 @@ let data = {
 ////////// 課題3-2 ここからプログラムを書こう
 
 let dq = document.querySelector('div#first')
-let p = document.createElement('p');
-p.textContent = '世界の天気(検索結果2件)';
+let p = document.createElement('h1');
+p.textContent = '世界の天気';
 dq.insertAdjacentElement('beforeend', p);
 
 let b1 = document.querySelector('button#btn');
