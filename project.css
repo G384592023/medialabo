@@ -1,9 +1,19 @@
-div#zentai{
+html{
+    background-color: rgb(248, 177, 45);
+    font-size: 1.3rem;
+}
+div{
     padding: 5px;
     color: rgb(28, 27, 77);
-    background-color: rgb(200, 203, 245);
-    border: solid;
 }
 li{
-    color: rgb(228, 138, 164);
+    color: rgb(48, 24, 183);
+}
+h1{
+    font-size: 3rem;
+    text-shadow:
+    1px 1px 1px red,
+    2px 2px 1px red;
+    color: rgb(77, 176, 233);
+    text-align: center;
 }
