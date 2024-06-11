@@ -3,10 +3,10 @@ h1{
 }
 h2{
     font-family:cursive;
-    color:orange;
+    color:rgb(153, 101, 231);
 }
 h3{
-    color:rgb(220, 239, 115);
+    color:rgb(29, 92, 42);
 }
 a:hover {
     border: solid;
@@ -19,6 +19,6 @@ a:visited{
 }
 div#zentai{
     padding: 5px;
-    background-color: rgb(200, 203, 245);
+    background-color: rgba(161, 161, 170, 0.647);
     border: solid;
 }
